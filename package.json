@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "vite",
     "generate": "NITRO_PRESET=cloudflare-pages tsr generate",
-    "build": "NITRO_PRESET=cloudflare-pages npm run generate && NITRO_PRESET=cloudflare-pages vite build",
+    "build": "NITRO_PRESET=cloudflare-pages npm run generate && NITRO_PRESET=cloudflare-pages vite build && cp -r dist/server/* dist/client/ && mv dist/client/index.js dist/client/_worker.js && rm -rf dist/server",
     "build:dev": "vite build --mode development",
     "preview": "vite preview",
     "lint": "eslint .",
