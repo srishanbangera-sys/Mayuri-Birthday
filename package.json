@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "vite",
     "generate": "npx tanstack router generate",
-    "build": "vite build",
+    "build": "npm run generate && vite build",
     "build:dev": "vite build --mode development",
     "preview": "vite preview",
     "lint": "eslint .",
