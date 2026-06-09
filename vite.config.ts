@@ -11,8 +11,12 @@ import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 export default defineConfig({
   nitro: {
     preset: "cloudflare-pages",
+    cloudflare: {
+      deployConfig: false,
+    },
     output: {
       dir: "dist/client",
+      serverDir: "dist/client/server",
       publicDir: "dist/client",
     },
   },
