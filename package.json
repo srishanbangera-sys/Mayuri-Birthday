@@ -6,8 +6,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "generate": "tsr generate",
-    "build": "npm run generate && vite build",
+    "generate": "NITRO_PRESET=cloudflare-pages tsr generate",
+    "build": "NITRO_PRESET=cloudflare-pages npm run generate && NITRO_PRESET=cloudflare-pages vite build",
     "build:dev": "vite build --mode development",
     "preview": "vite preview",
     "lint": "eslint .",
