@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "generate": "npx tanstack router generate",
+    "generate": "tsr generate",
     "build": "npm run generate && vite build",
     "build:dev": "vite build --mode development",
     "preview": "vite preview",
@@ -44,6 +44,7 @@
     "@radix-ui/react-toggle-group": "^1.1.11",
     "@radix-ui/react-tooltip": "^1.2.8",
     "@tailwindcss/vite": "^4.2.1",
+    "@tanstack/query-core": "^5.101.0",
     "@tanstack/react-query": "^5.83.0",
     "@tanstack/react-router": "^1.168.25",
     "@tanstack/react-start": "^1.167.50",
